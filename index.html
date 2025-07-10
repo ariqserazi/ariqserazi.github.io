@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" class="dak font-sans">
+<html lang="en" class="dark font-sans">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ariq Serazi • Portfolio</title>
+
   <!-- Google Font: Poppins -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,9 +24,7 @@
       }
     }
   </script>
-  <style>
-    html { scroll-behavior: smooth; }
-  </style>
+  <style>html { scroll-behavior: smooth; }</style>
 </head>
 <body class="bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100">
   <!-- Navigation -->
@@ -55,39 +54,35 @@
     <!-- Hero / About Me -->
     <section id="home" class="min-h-screen flex items-center bg-gray-50 dark:bg-gray-900">
       <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+
         <!-- Left: Avatar & Basic Info -->
-        <div class="text-center md:text-left">
-          <div class="w-48 h-48 mx-auto md:mx-0 rounded-full overflow-hidden border-4 border-blue-500 mb-4">
-            <img src="assets/avatar.jpg" alt="Ariq Serazi" class="w-full h-full object-cover" />
+        <div class="text-center md:text-left flex flex-col gap-4">
+          <div class="w-48 h-48 mx-auto md:mx-0 rounded-full overflow-hidden border-4 border-blue-500">
+            <img src="assets/avatar.jpeg" alt="Ariq Serazi" class="w-full h-full object-cover" />
           </div>
-          <h1 class="text-5xl font-bold mb-2">Ariq Serazi</h1>
-          <p class="text-xl text-gray-700 dark:text-gray-300 mb-1">Full-stack Software Engineer</p>
-          <p class="text-gray-600 dark:text-gray-400 mb-4">Rutgers University, B.S. Computer Science</p>
-          <div class="flex justify-center md:justify-start space-x-4">
+          <h1 class="text-5xl font-bold mb-1">Ariq Serazi</h1>
+          <p class="text-xl text-gray-700 dark:text-gray-300">Full-stack Software Engineer</p>
+          <p class="text-gray-600 dark:text-gray-400">Rutgers University, B.S. Computer Science</p>
+          <div class="flex justify-center md:justify-start space-x-4 mt-2">
             <!-- Email -->
-            <a href="mailto:ariq.serazi1@gmail.com"
-               class="p-2 bg-gray-200 dark:bg-gray-700 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600">
-              <img src="assets/email-icon.png" alt="Email" class="h-6 w-6"/>
+            <a href="mailto:ariq.serazi1@gmail.com" class="p-2 bg-gray-200 dark:bg-gray-700 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600">
+              <img src="assets/email-icon.png" alt="Email" class="h-6 w-6 object-contain" />
             </a>
-          
             <!-- GitHub -->
-            <a href="https://github.com/ariqserazi" target="_blank"
-               class="p-2 bg-gray-200 dark:bg-gray-700 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600">
-              <img src="assets/github-icon.png" alt="GitHub" class="h-6 w-6"/>
+            <a href="https://github.com/ariqserazi" target="_blank" rel="noopener" class="p-2 bg-gray-200 dark:bg-gray-700 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600">
+              <img src="assets/github-icon.png" alt="GitHub" class="h-6 w-6 object-contain" />
             </a>
-          
             <!-- LinkedIn -->
-            <a href="https://linkedin.com/in/ariq-serazi" target="_blank"
-               class="p-2 bg-gray-200 dark:bg-gray-700 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600">
-              <img src="assets/linkedin-icon.png" alt="LinkedIn" class="h-6 w-6"/>
+            <a href="https://linkedin.com/in/ariq-serazi" target="_blank" rel="noopener" class="p-2 bg-gray-200 dark:bg-gray-700 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600">
+              <img src="assets/linkedin-icon.png" alt="LinkedIn" class="h-6 w-6 object-contain" />
             </a>
-          
             <!-- Resume/CV -->
-            <a href="resume.pdf" target="_blank"
-               class="p-2 bg-gray-200 dark:bg-gray-700 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600">
-              <img src="assets/document-icon.png" alt="Resume" class="h-6 w-6"/>
+            <a href="resume.pdf" target="_blank" rel="noopener" class="p-2 bg-gray-200 dark:bg-gray-700 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600">
+              <img src="assets/document-icon.png" alt="Resume" class="h-6 w-6 object-contain" />
             </a>
           </div>
+        </div>
+
         <!-- Right: Biography & Details -->
         <div>
           <h2 class="text-4xl font-semibold mb-4">Biography</h2>
@@ -95,6 +90,7 @@
             I’m a full-stack engineer specializing in Flutter mobile/web and AWS serverless backends. I love building real-time data pipelines, crafting clean UIs, and designing maintainable architectures that scale in production.
           </p>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <!-- Interests -->
             <div>
               <h3 class="text-2xl font-semibold mb-2">Interests</h3>
               <ul class="space-y-1 text-gray-700 dark:text-gray-300">
@@ -103,6 +99,7 @@
                 <li>⚛️ Distributed Systems</li>
               </ul>
             </div>
+            <!-- Education -->
             <div>
               <h3 class="text-2xl font-semibold mb-2">Education</h3>
               <ul class="space-y-4 text-gray-700 dark:text-gray-300">
@@ -112,6 +109,7 @@
             </div>
           </div>
         </div>
+
       </div>
     </section>
 
@@ -129,14 +127,14 @@
           </div>
           <!-- Card 2 -->
           <div class="bg-gray-100 dark:bg-gray-700 rounded-lg shadow p-6 text-center">
-            <img src="assets/pdf-demo.gif" alt="PDF Extractor" class="h-16 w-16 object-contain mx-auto mb-4" />
+            <img src="assets/pdf-demo.png" alt="PDF Extractor" class="h-16 w-16 object-contain mx-auto mb-4" />
             <h3 class="text-xl font-semibold mb-2">MultiPDF Extractor</h3>
             <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">Python · PyPDF2</p>
             <a href="https://github.com/ariqserazi/multipdf_extractor" class="text-blue-600 dark:text-blue-400 hover:underline">GitHub Repo</a>
           </div>
           <!-- Card 3 -->
           <div class="bg-gray-100 dark:bg-gray-700 rounded-lg shadow p-6 text-center">
-            <img src="assets/ds-demo.gif" alt="Data Structures" class="h-16 w-16 object-contain mx-auto mb-4" />
+            <img src="assets/ds-demo.png" alt="Data Structures" class="h-16 w-16 object-contain mx-auto mb-4" />
             <h3 class="text-xl font-semibold mb-2">Data Structure Projects</h3>
             <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">Java · Algorithms</p>
             <a href="https://github.com/ariqserazi/DataStructureProjects" class="text-blue-600 dark:text-blue-400 hover:underline">GitHub Repo</a>
