@@ -4,73 +4,100 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ariq Serazi • Portfolio</title>
-  <!-- Tailwind CSS CDN -->
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-900 text-gray-100">
-  <header class="p-8 text-center">
-    <h1 class="text-5xl font-bold">Ariq Serazi</h1>
-    <p class="mt-2">Flutter & AWS Serverless Engineer</p>
+  <!-- Hero / Description -->
+  <header class="bg-gray-800 text-center p-8">
+    <h1 class="text-5xl font-bold mb-2">👋 Hey, I’m Ariq Serazi</h1>
+    <p class="text-lg mb-4">🚀 Flutter & AWS Serverless Engineer • DSA addict • Open-source tinkerer</p>
+    <nav class="space-x-4">
+      <a href="#projects" class="hover:underline">🚀 Projects</a>
+      <a href="#stats" class="hover:underline">📈 Stats</a>
+      <a href="#connect" class="hover:underline">📫 Connect</a>
+    </nav>
   </header>
 
-  <section class="max-w-4xl mx-auto p-4 grid grid-cols-2 gap-6">
-    <!-- Project Card 1 -->
+  <!-- GitHub Stats -->
+  <section id="stats" class="max-w-4xl mx-auto mt-8 p-4 grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div class="bg-gray-800 rounded-lg p-4 shadow-lg">
+      <h2 class="text-2xl font-semibold mb-2">ariqserazi’s GitHub Stats</h2>
+      <img src="https://github-readme-stats.vercel.app/api?username=ariqserazi&show_icons=true&theme=dark" alt="GitHub stats" class="w-full" />
+    </div>
+    <div class="bg-gray-800 rounded-lg p-4 shadow-lg">
+      <h2 class="text-2xl font-semibold mb-2">Most Used Languages</h2>
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ariqserazi&layout=compact&theme=dark" alt="Top languages" class="w-full" />
+    </div>
+  </section>
+
+  <!-- Projects Gallery -->
+  <section id="projects" class="max-w-6xl mx-auto mt-12 p-4 grid grid-cols-1 md:grid-cols-2 gap-8">
+    <!-- Repeat cards for each project -->
     <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
       <a href="https://github.com/ariqserazi/personal_expense_tracker">
-        <img src="assets/expense-demo.gif" alt="Expense Tracker Demo" class="w-full"/>
+        <img src="assets/expense-demo.gif" alt="Expense Tracker Demo" class="w-full" />
       </a>
       <div class="p-4">
         <h3 class="text-xl font-semibold">Personal Expense Tracker</h3>
-        <p class="mt-1">Flutter · Dart · GraphQL</p>
+        <p class="text-sm text-gray-300 mt-1">Flutter · Dart · GraphQL</p>
         <p class="mt-2">
-          🔗 <a href="https://trackwise.app" class="text-blue-400 hover:underline">Live Site</a> •
-          🔗 <a href="https://github.com/ariqserazi/personal_expense_tracker" class="text-blue-400 hover:underline">Repo</a>
+          <a href="https://trackwise.app" class="text-blue-400 hover:underline">Live</a> •
+          <a href="https://github.com/ariqserazi/personal_expense_tracker" class="text-blue-400 hover:underline">Repo</a>
         </p>
       </div>
     </div>
-    <!-- Project Card 2 -->
+    <!-- More project cards... -->
+    <!-- Auction Website -->
     <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
       <a href="https://github.com/ariqserazi/Auction-Website">
-        <img src="assets/auction-demo.gif" alt="Auction Website Demo" class="w-full"/>
+        <img src="assets/auction-demo.gif" alt="Auction Website Demo" class="w-full" />
       </a>
       <div class="p-4">
         <h3 class="text-xl font-semibold">Auction Website</h3>
-        <p class="mt-1">React · Node.js · MongoDB</p>
+        <p class="text-sm text-gray-300 mt-1">React · Node.js · MongoDB</p>
         <p class="mt-2">
-          🔗 <a href="https://github.com/ariqserazi/Auction-Website" class="text-blue-400 hover:underline">Repo</a>
+          <a href="https://github.com/ariqserazi/Auction-Website" class="text-blue-400 hover:underline">Repo</a>
         </p>
       </div>
     </div>
-    <!-- Project Card 3 -->
+    <!-- MultiPDF Extractor -->
     <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
       <a href="https://github.com/ariqserazi/multipdf_extractor">
-        <img src="assets/pdf-demo.gif" alt="PDF Extractor Demo" class="w-full"/>
+        <img src="assets/pdf-demo.gif" alt="PDF Extractor Demo" class="w-full" />
       </a>
       <div class="p-4">
         <h3 class="text-xl font-semibold">MultiPDF Extractor</h3>
-        <p class="mt-1">Python · PyPDF2</p>
+        <p class="text-sm text-gray-300 mt-1">Python · PyPDF2</p>
         <p class="mt-2">
-          🔗 <a href="https://github.com/ariqserazi/multipdf_extractor" class="text-blue-400 hover:underline">Repo</a>
+          <a href="https://github.com/ariqserazi/multipdf_extractor" class="text-blue-400 hover:underline">Repo</a>
         </p>
       </div>
     </div>
-    <!-- Project Card 4 -->
+    <!-- Data Structure Projects -->
     <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
       <a href="https://github.com/ariqserazi/DataStructureProjects">
-        <img src="assets/ds-demo.gif" alt="Data Structures Demo" class="w-full"/>
+        <img src="assets/ds-demo.gif" alt="Data Structures Demo" class="w-full" />
       </a>
       <div class="p-4">
         <h3 class="text-xl font-semibold">Data Structure Projects</h3>
-        <p class="mt-1">Java · Algorithms</p>
+        <p class="text-sm text-gray-300 mt-1">Java · Algorithms</p>
         <p class="mt-2">
-          🔗 <a href="https://github.com/ariqserazi/DataStructureProjects" class="text-blue-400 hover:underline">Repo</a>
+          <a href="https://github.com/ariqserazi/DataStructureProjects" class="text-blue-400 hover:underline">Repo</a>
         </p>
       </div>
     </div>
   </section>
 
-  <footer class="p-8 text-center text-sm text-gray-500">
-    © 2025 Ariq Serazi
+  <!-- Connect -->
+  <footer id="connect" class="bg-gray-800 text-center p-8 mt-12">
+    <h2 class="text-2xl font-semibold mb-2">📫 Connect</h2>
+    <p>
+      <a href="https://linkedin.com/in/ariqserazi" class="hover:underline">LinkedIn</a> •
+      <a href="https://ariq.dev" class="hover:underline">Portfolio</a> •
+      <a href="mailto:ariq@ariq.dev" class="hover:underline">Email</a>
+    </p>
+    <p class="text-sm text-gray-500 mt-4">© 2025 Ariq Serazi</p>
   </footer>
 </body>
 </html>
