@@ -1,1 +1,0 @@
-# ariqserazi.github.io
