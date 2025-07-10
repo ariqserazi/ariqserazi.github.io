@@ -8,29 +8,33 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-900 text-gray-100">
-  <!-- Hero / Description -->
-  <header class="bg-gray-800 text-center p-8">
-    <h1 class="text-5xl font-bold mb-2">👋 Hey, I’m Ariq Serazi</h1>
-    <!-- Resume summary -->
-    <p class="text-lg mb-2">Full-stack Software Engineer with experience building cross-platform apps for mobile and web using Flutter, backed by scalable backend systems. Skilled in Node.js, AWS, and PostgreSQL, with a focus on clean UI, real-time data sync, and maintainable architecture.</p>
-    <nav class="space-x-4">
-      <a href="#projects" class="hover:underline">🚀 Projects</a>
-      <a href="#connect" class="hover:underline">📫 Connect</a>
-    </nav>
+  <!-- Hero / Header -->
+  <header class="max-w-4xl mx-auto p-8 flex flex-col md:flex-row items-center md:items-start gap-8">
+    <!-- Text block -->
+    <div class="flex-1 text-center md:text-left">
+      <h1 class="text-5xl font-bold mb-4">👋 Hey, I’m Ariq Serazi</h1>
+      <p class="text-lg text-gray-300 mb-4">
+        Full-stack Software Engineer with a knack for crafting clean UIs and robust backends. I build cross-platform Flutter apps and scalable serverless systems on AWS. My focus is on real-time data sync, maintainable architecture, and shipping production-ready features.
+      </p>
+      <nav class="space-x-4 mb-2">
+        <a href="#projects" class="text-blue-400 hover:underline">🚀 Projects</a>
+        <a href="#connect" class="text-blue-400 hover:underline">📫 Connect</a>
+      </nav>
+    </div>
+    <!-- Avatar -->
+    <div class="flex-shrink-0 w-40 h-40 rounded-full overflow-hidden bg-gray-700">
+      <img src="assets/avatar.jpg" alt="Ariq Serazi" class="w-full h-full object-cover"/>
+    </div>
   </header>
 
-  <!-- Projects Gallery -->
+  <!-- Projects Section -->
   <section id="projects" class="max-w-6xl mx-auto mt-12 p-4">
     <h2 class="text-3xl font-semibold text-center mb-8">🚀 Projects</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
       <!-- Personal Expense Tracker -->
       <div class="bg-gray-800 rounded-lg shadow-lg p-6 text-center">
-        <img
-          src="assets/expense-demo.gif"
-          alt="Expense Tracker Icon"
-          class="h-16 w-16 object-contain mx-auto mb-4"
-        />
+        <img src="assets/expense-demo.gif" alt="Expense Tracker Icon" class="h-16 w-16 object-contain mx-auto mb-4" />
         <h3 class="text-xl font-semibold">Personal Expense Tracker</h3>
         <p class="text-sm text-gray-400 mb-2">Flutter · Dart · gRPC</p>
         <a href="https://github.com/ariqserazi/personal_expense_tracker" class="text-blue-400 hover:underline">Repo</a>
@@ -38,11 +42,7 @@
 
       <!-- MultiPDF Extractor -->
       <div class="bg-gray-800 rounded-lg shadow-lg p-6 text-center">
-        <img
-          src="assets/pdf-demo.gif"
-          alt="PDF Extractor Icon"
-          class="h-16 w-16 object-contain mx-auto mb-4"
-        />
+        <img src="assets/pdf-demo.png" alt="PDF Extractor Icon" class="h-16 w-16 object-contain mx-auto mb-4" />
         <h3 class="text-xl font-semibold">MultiPDF Extractor</h3>
         <p class="text-sm text-gray-400 mb-2">Python · PyPDF2</p>
         <a href="https://github.com/ariqserazi/multipdf_extractor" class="text-blue-400 hover:underline">Repo</a>
@@ -50,11 +50,7 @@
 
       <!-- Data Structure Projects -->
       <div class="bg-gray-800 rounded-lg shadow-lg p-6 text-center">
-        <img
-          src="assets/ds-demo.gif"
-          alt="Data Structures Icon"
-          class="h-16 w-16 object-contain mx-auto mb-4"
-        />
+        <img src="assets/ds-demo.png" alt="Data Structures Icon" class="h-16 w-16 object-contain mx-auto mb-4" />
         <h3 class="text-xl font-semibold">Data Structure Projects</h3>
         <p class="text-sm text-gray-400 mb-2">Java · Algorithms</p>
         <a href="https://github.com/ariqserazi/DataStructureProjects" class="text-blue-400 hover:underline">Repo</a>
@@ -63,7 +59,7 @@
     </div>
   </section>
 
-  <!-- Connect -->
+  <!-- Connect Section -->
   <footer id="connect" class="bg-gray-800 text-center p-8 mt-12">
     <h2 class="text-2xl font-semibold mb-2">📫 Connect</h2>
     <p>
