@@ -1,3 +1,6 @@
+# `index.html`
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,29 +14,17 @@
   <!-- Hero / Description -->
   <header class="bg-gray-800 text-center p-8">
     <h1 class="text-5xl font-bold mb-2">👋 Hey, I’m Ariq Serazi</h1>
-    <p class="text-lg mb-4">🚀 Flutter & AWS Serverless Engineer • DSA addict • Open-source tinkerer</p>
+    <!-- Resume summary -->
+    <p class="text-lg mb-2">Full-stack Software Engineer with experience building cross-platform apps for mobile and web using Flutter, backed by scalable backend systems. Skilled in Node.js, AWS, and PostgreSQL, with a focus on clean UI, real-time data sync, and maintainable architecture.</p>
     <nav class="space-x-4">
       <a href="#projects" class="hover:underline">🚀 Projects</a>
-      <a href="#stats" class="hover:underline">📈 Stats</a>
       <a href="#connect" class="hover:underline">📫 Connect</a>
     </nav>
   </header>
 
-  <!-- GitHub Stats -->
-  <section id="stats" class="max-w-4xl mx-auto mt-8 p-4 grid grid-cols-1 md:grid-cols-2 gap-6">
-    <div class="bg-gray-800 rounded-lg p-4 shadow-lg">
-      <h2 class="text-2xl font-semibold mb-2">ariqserazi’s GitHub Stats</h2>
-      <img src="https://github-readme-stats.vercel.app/api?username=ariqserazi&show_icons=true&theme=dark" alt="GitHub stats" class="w-full" />
-    </div>
-    <div class="bg-gray-800 rounded-lg p-4 shadow-lg">
-      <h2 class="text-2xl font-semibold mb-2">Most Used Languages</h2>
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ariqserazi&layout=compact&theme=dark" alt="Top languages" class="w-full" />
-    </div>
-  </section>
-
   <!-- Projects Gallery -->
   <section id="projects" class="max-w-6xl mx-auto mt-12 p-4 grid grid-cols-1 md:grid-cols-2 gap-8">
-    <!-- Repeat cards for each project -->
+    <!-- Personal Expense Tracker -->
     <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
       <a href="https://github.com/ariqserazi/personal_expense_tracker">
         <img src="assets/expense-demo.gif" alt="Expense Tracker Demo" class="w-full" />
@@ -42,25 +33,12 @@
         <h3 class="text-xl font-semibold">Personal Expense Tracker</h3>
         <p class="text-sm text-gray-300 mt-1">Flutter · Dart · GraphQL</p>
         <p class="mt-2">
-          <a href="https://trackwise.app" class="text-blue-400 hover:underline">Live</a> •
+          <a href="https://trackwise.app" class="text-blue-400 hover:underline">Live Site</a> •
           <a href="https://github.com/ariqserazi/personal_expense_tracker" class="text-blue-400 hover:underline">Repo</a>
         </p>
       </div>
     </div>
-    <!-- More project cards... -->
-    <!-- Auction Website -->
-    <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
-      <a href="https://github.com/ariqserazi/Auction-Website">
-        <img src="assets/auction-demo.gif" alt="Auction Website Demo" class="w-full" />
-      </a>
-      <div class="p-4">
-        <h3 class="text-xl font-semibold">Auction Website</h3>
-        <p class="text-sm text-gray-300 mt-1">React · Node.js · MongoDB</p>
-        <p class="mt-2">
-          <a href="https://github.com/ariqserazi/Auction-Website" class="text-blue-400 hover:underline">Repo</a>
-        </p>
-      </div>
-    </div>
+
     <!-- MultiPDF Extractor -->
     <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
       <a href="https://github.com/ariqserazi/multipdf_extractor">
@@ -74,6 +52,7 @@
         </p>
       </div>
     </div>
+
     <!-- Data Structure Projects -->
     <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
       <a href="https://github.com/ariqserazi/DataStructureProjects">
@@ -93,11 +72,46 @@
   <footer id="connect" class="bg-gray-800 text-center p-8 mt-12">
     <h2 class="text-2xl font-semibold mb-2">📫 Connect</h2>
     <p>
-      <a href="https://linkedin.com/in/ariqserazi" class="hover:underline">LinkedIn</a> •
-      <a href="https://ariq.dev" class="hover:underline">Portfolio</a> •
-      <a href="mailto:ariq@ariq.dev" class="hover:underline">Email</a>
+      <a href="https://linkedin.com/in/ariq-serazi" class="hover:underline">LinkedIn</a> •
+      <a href="mailto:ariq.serazi1@gmail.com" class="hover:underline">Email</a>
     </p>
     <p class="text-sm text-gray-500 mt-4">© 2025 Ariq Serazi</p>
   </footer>
 </body>
 </html>
+```
+
+---
+
+# `index.md` (Jekyll)
+
+```markdown
+---
+layout: default
+title: "Ariq Serazi • Portfolio"
+---
+
+<!-- Hero / Description -->
+# 👋 Hey, I’m Ariq Serazi
+
+Full-stack Software Engineer with experience building cross-platform apps for mobile and web using Flutter, backed by scalable backend systems. Skilled in Node.js, AWS, and PostgreSQL, with a focus on clean UI, real-time data sync, and maintainable architecture.
+
+[🚀 Projects](#projects) • [📫 Connect](#connect)
+
+---
+
+## 🚀 Projects {#projects}
+
+| Project                     | Tech Stack               | Links                                                   |
+|-----------------------------|--------------------------|---------------------------------------------------------|
+| **Personal Expense Tracker**| Flutter · Dart · GraphQL | [Live](https://trackwise.app) • [Repo](https://github.com/ariqserazi/personal_expense_tracker) |
+| **MultiPDF Extractor**      | Python · PyPDF2          | [Repo](https://github.com/ariqserazi/multipdf_extractor)|
+| **Data Structure Projects** | Java · Algorithms        | [Repo](https://github.com/ariqserazi/DataStructureProjects)|
+
+---
+
+## 📫 Connect {#connect}
+
+- [LinkedIn](https://www.linkedin.com/in/ariq-serazi)
+- [Email](mailto:ariq.serazi1@gmail.com)
+```
