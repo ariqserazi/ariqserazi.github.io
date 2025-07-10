@@ -1,73 +1,169 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ariq Serazi • Portfolio</title>
-  <!-- Tailwind CSS -->
+  <!-- Tailwind + class-based dark mode -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: 'class' }
+  </script>
+  <style>
+    /* Smooth scroll for anchor links */
+    html { scroll-behavior: smooth; }
+  </style>
 </head>
-<body class="bg-gray-900 text-gray-100">
-  <!-- Hero / Header -->
-  <header class="max-w-4xl mx-auto p-8 flex flex-col md:flex-row items-center md:items-start gap-8">
-    <!-- Text block -->
-    <div class="flex-1 text-center md:text-left">
-      <h1 class="text-5xl font-bold mb-4">👋 Hey, I’m Ariq Serazi</h1>
-      <p class="text-lg text-gray-300 mb-4">
-        Full-stack Software Engineer with a knack for crafting clean UIs and robust backends. I build cross-platform Flutter apps and scalable serverless systems on AWS. My focus is on real-time data sync, maintainable architecture, and shipping production-ready features.
+<body class="bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100">
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full bg-white dark:bg-gray-800 shadow z-20">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="#home" class="text-xl font-bold">Ariq Serazi</a>
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="#home" class="hover:text-blue-500">Home</a></li>
+        <li><a href="#projects" class="hover:text-blue-500">Projects</a></li>
+        <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" class="ml-4 p-2 rounded bg-gray-200 dark:bg-gray-700">
+        🌙
+      </button>
+      <!-- Mobile menu toggle -->
+      <button id="menu-toggle" class="md:hidden ml-4 p-2">
+        ☰
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden bg-white dark:bg-gray-800">
+      <ul class="flex flex-col p-4 space-y-2">
+        <li><a href="#home" class="block hover:text-blue-500">Home</a></li>
+        <li><a href="#projects" class="block hover:text-blue-500">Projects</a></li>
+        <li><a href="#contact" class="block hover:text-blue-500">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="pt-20">
+    <!-- Hero -->
+<!-- Hero / About Me -->
+<section id="home" class="pt-20 bg-gray-50 dark:bg-gray-900">
+  <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+    <!-- Left column: Avatar & Info -->
+    <div class="text-center md:text-left">
+      <div class="w-48 h-48 mx-auto md:mx-0 rounded-full overflow-hidden border-4 border-blue-500 mb-4">
+        <img src="assets/avatar.jpg" alt="Ariq Serazi" class="w-full h-full object-cover" />
+      </div>
+      <h1 class="text-5xl font-bold">Ariq Serazi</h1>
+      <p class="text-xl text-gray-600 dark:text-gray-300 mb-1">Full-stack Software Engineer</p>
+      <p class="text-gray-700 dark:text-gray-400 mb-4">Rutgers University, B.S. Computer Science</p>
+      <div class="flex justify-center md:justify-start space-x-4 text-2xl">
+        <a href="mailto:ariq.serazi1@gmail.com" class="hover:text-blue-500">✉️</a>
+        <a href="https://github.com/ariqserazi" class="hover:text-blue-500">🐙</a>
+        <a href="https://linkedin.com/in/ariq-serazi" class="hover:text-blue-500">🔗</a>
+        <a href="https://ariq.dev/resume.pdf" class="hover:text-blue-500">📄</a>
+      </div>
+    </div>
+
+    <!-- Right column: Biography & Details -->
+    <div>
+      <h2 class="text-4xl font-semibold mb-4">Biography</h2>
+      <p class="text-gray-700 dark:text-gray-300 mb-8">
+        I’m a full-stack engineer specializing in Flutter mobile/web and AWS serverless backends. 
+        I love building real-time data pipelines, crafting clean UIs, and designing maintainable architectures 
+        that scale in production.
       </p>
-      <nav class="space-x-4 mb-2">
-        <a href="#projects" class="text-blue-400 hover:underline">🚀 Projects</a>
-        <a href="#connect" class="text-blue-400 hover:underline">📫 Connect</a>
-      </nav>
-    </div>
-    <!-- Avatar -->
-    <div class="flex-shrink-0 w-40 h-40 rounded-full overflow-hidden bg-gray-700">
-      <img src="assets/avatar.jpg" alt="Ariq Serazi" class="w-full h-full object-cover"/>
-    </div>
-  </header>
-
-  <!-- Projects Section -->
-  <section id="projects" class="max-w-6xl mx-auto mt-12 p-4">
-    <h2 class="text-3xl font-semibold text-center mb-8">🚀 Projects</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-
-      <!-- Personal Expense Tracker -->
-      <div class="bg-gray-800 rounded-lg shadow-lg p-6 text-center">
-        <img src="assets/expense-demo.gif" alt="Expense Tracker Icon" class="h-16 w-16 object-contain mx-auto mb-4" />
-        <h3 class="text-xl font-semibold">Personal Expense Tracker</h3>
-        <p class="text-sm text-gray-400 mb-2">Flutter · Dart · gRPC</p>
-        <a href="https://github.com/ariqserazi/personal_expense_tracker" class="text-blue-400 hover:underline">Repo</a>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <!-- Interests -->
+        <div>
+          <h3 class="text-2xl font-semibold mb-2">Interests</h3>
+          <ul class="space-y-1 text-gray-700 dark:text-gray-300">
+            <li>📱 Mobile & Flutter Development</li>
+            <li>☁️ Serverless Architecture</li>
+            <li>⚛️ Distributed Systems</li>
+          </ul>
+        </div>
+        <!-- Education -->
+        <div>
+          <h3 class="text-2xl font-semibold mb-2">Education</h3>
+          <ul class="space-y-2 text-gray-700 dark:text-gray-300">
+            <li>
+              <span class="font-semibold">B.S. Computer Science</span><br/>
+              Rutgers University, 2025
+            </li>
+            <li>
+              <span class="font-semibold">AWS Certified Developer</span><br/>
+              Amazon Web Services
+            </li>
+          </ul>
+        </div>
       </div>
-
-      <!-- MultiPDF Extractor -->
-      <div class="bg-gray-800 rounded-lg shadow-lg p-6 text-center">
-        <img src="assets/pdf-demo.gif" alt="PDF Extractor Icon" class="h-16 w-16 object-contain mx-auto mb-4" />
-        <h3 class="text-xl font-semibold">MultiPDF Extractor</h3>
-        <p class="text-sm text-gray-400 mb-2">Python · PyPDF2</p>
-        <a href="https://github.com/ariqserazi/multipdf_extractor" class="text-blue-400 hover:underline">Repo</a>
-      </div>
-
-      <!-- Data Structure Projects -->
-      <div class="bg-gray-800 rounded-lg shadow-lg p-6 text-center">
-        <img src="assets/ds-demo.gif" alt="Data Structures Icon" class="h-16 w-16 object-contain mx-auto mb-4" />
-        <h3 class="text-xl font-semibold">Data Structure Projects</h3>
-        <p class="text-sm text-gray-400 mb-2">Java · Algorithms</p>
-        <a href="https://github.com/ariqserazi/DataStructureProjects" class="text-blue-400 hover:underline">Repo</a>
-      </div>
-
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Connect Section -->
-  <footer id="connect" class="bg-gray-800 text-center p-8 mt-12">
-    <h2 class="text-2xl font-semibold mb-2">📫 Connect</h2>
-    <p>
-      <a href="https://linkedin.com/in/ariq-serazi" class="hover:underline">LinkedIn</a> •
-      <a href="mailto:ariq.serazi1@gmail.com" class="hover:underline">Email</a>
-    </p>
-    <p class="text-sm text-gray-500 mt-4">© 2025 Ariq Serazi</p>
+    <!-- Projects -->
+    <section id="projects" class="py-20 bg-white dark:bg-gray-800">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-4xl font-semibold text-center mb-12">🚀 Projects</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          <!-- Example card -->
+          <div class="bg-gray-100 dark:bg-gray-700 rounded-lg shadow p-6 text-center">
+            <img src="assets/expense-demo.gif" alt="Expense Tracker" class="h-16 w-16 object-contain mx-auto mb-4" />
+            <h3 class="text-xl font-semibold mb-2">Personal Expense Tracker</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">Flutter · Dart · gRPC</p>
+            <a href="https://github.com/ariqserazi/personal_expense_tracker" class="text-blue-600 dark:text-blue-400 hover:underline">GitHub Repo</a>
+          </div>
+
+          <!-- Copy similarly for others -->
+          <div class="bg-gray-100 dark:bg-gray-700 rounded-lg shadow p-6 text-center">
+            <img src="assets/pdf-demo.gif" alt="PDF Extractor" class="h-16 w-16 object-contain mx-auto mb-4" />
+            <h3 class="text-xl font-semibold mb-2">MultiPDF Extractor</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">Python · PyPDF2</p>
+            <a href="https://github.com/ariqserazi/multipdf_extractor" class="text-blue-600 dark:text-blue-400 hover:underline">GitHub Repo</a>
+          </div>
+
+          <div class="bg-gray-100 dark:bg-gray-700 rounded-lg shadow p-6 text-center">
+            <img src="assets/ds-demo.gif" alt="Data Structures" class="h-16 w-16 object-contain mx-auto mb-4" />
+            <h3 class="text-xl font-semibold mb-2">Data Structure Projects</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">Java · Algorithms</p>
+            <a href="https://github.com/ariqserazi/DataStructureProjects" class="text-blue-600 dark:text-blue-400 hover:underline">GitHub Repo</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-16 bg-gray-50 dark:bg-gray-900">
+      <div class="max-w-4xl mx-auto px-4 text-center">
+        <h2 class="text-3xl font-semibold mb-6">📫 Get In Touch</h2>
+        <p class="text-gray-700 dark:text-gray-300 mb-6">Feel free to reach out via LinkedIn or email.</p>
+        <div class="space-x-4">
+          <a href="https://linkedin.com/in/ariq-serazi" class="px-5 py-3 bg-blue-600 text-white rounded hover:bg-blue-500">LinkedIn</a>
+          <a href="mailto:ariq.serazi1@gmail.com" class="px-5 py-3 bg-gray-800 text-white rounded hover:bg-gray-700">Email Me</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-6 bg-white dark:bg-gray-800 text-center text-sm text-gray-500">
+    © 2025 Ariq Serazi
   </footer>
+
+  <script>
+    // Theme toggle
+    const themeToggle = document.getElementById('theme-toggle');
+    themeToggle.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+      themeToggle.textContent = document.documentElement.classList.contains('dark') ? '☀️' : '🌙';
+    });
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
 </body>
 </html>
